@@ -4,7 +4,7 @@
 
 This takehome project evaluates your ability to build a loan application processing system using TypeScript, Express.js, and TypeORM. The boilerplate provides a foundation with mock external services, and you'll implement the core business logic, data models, and background processing.
 
-**Expected Time**: 2-3 hours
+**Expected Time**: 2-4 hours
 
 ## What's Provided
 
