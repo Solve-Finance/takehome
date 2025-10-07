@@ -30,6 +30,8 @@ Create a TypeORM entity that includes:
 - Applicant name
 - Email address
 - Loan amount requested
+- Requested payment interval (bi-weekly or monthly)
+- Term (monthly: 12, 24, 36. bi-weekly: 26, 52)
 - Loan purpose (e.g., "home", "auto", "business")
 
 **Calculated fields** (computed before saving):
@@ -152,36 +154,3 @@ src/
 ├── migrations/                 # [YOU CREATE THESE]
 └── [scheduler/worker code]     # [YOU BUILD THIS]
 ```
-
-## Testing
-
-Use your discretion on testing. We value:
-- Clean, readable code
-- Proper error handling
-- Good architectural decisions
-
-If you choose to write tests, focus on the business logic and critical paths.
-
-## Evaluation Criteria
-
-We'll be looking at:
-
-1. **Completeness**: Does the solution meet all requirements?
-2. **Code Quality**: Is the code clean, well-organized, and maintainable?
-3. **Database Design**: Are entities and migrations properly structured?
-4. **Business Logic**: Is the separation of concerns clear?
-5. **Background Processing**: How well does the scheduler handle batching, concurrency, and edge cases?
-6. **Error Handling**: Are errors handled gracefully?
-7. **Design Decisions**: Can you explain your architectural choices?
-
-## Submission
-
-1. Ensure your code runs successfully with `npm run dev`
-2. Include any additional setup instructions in this README if needed
-3. Be prepared to discuss your design decisions and trade-offs
-
-## Questions?
-
-If you have questions about requirements or run into issues with the boilerplate setup, please reach out to your point of contact.
-
-Good luck!
